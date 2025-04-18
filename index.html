@@ -29,8 +29,6 @@
 
     <main>
       <section class="grid-main hero">
-     
-
         <div class="hero-text">
           <h1 class="headline">Typemaster keyboard</h1>
           <p class="decription">
@@ -42,15 +40,23 @@
           <p class="info"><strong class="caps">Release on 5/27</strong></p>
         </div>
 
+        <picture class="hero-image">
+          <source
+            media="(width >= 75rem )"
+            srcset="assets/desktop/image-keyboard.jpg"
+          />
+          <source
+            media="(width >= 43.75rem )"
+            srcset="assets/tablet/image-keyboard.jpg"
+          />
 
-        <img
-          src="assets/desktop/image-keyboard.jpg"
-          alt="mechanical keyboard"
-          width="1080"
-          height="960"
-          class="hero-image"
-        />
-     
+          <img
+            src="assets/mobile/image-keyboard.jpg"
+            alt="mechanical keyboard"
+            width="1080"
+            height="960"
+          />
+        </picture>
 
         <div class="gray-block"></div>
       </section>
