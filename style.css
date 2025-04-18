@@ -162,18 +162,23 @@ button {
   align-items: center;
 }
 
-.hero-text > * {
-  grid-column: 1/-1;
+@media (max-width: 368px) {
+  .hero-text {
+    gap: 20px;
+  }
 }
 
-.hero-text .info,
-.hero-text .button {
+.hero-text > * {
+  grid-column: 1 / -1;
+}
+.hero-text .button,
+.hero-text .info {
   grid-column: span 1;
 }
 
 .hero-image {
   grid-column: 2 / -1;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 .gray-block {
